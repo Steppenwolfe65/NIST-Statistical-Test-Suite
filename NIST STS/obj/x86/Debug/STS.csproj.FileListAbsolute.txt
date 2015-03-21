@@ -1,0 +1,14 @@
+C:\Users\John\Documents\Visual Studio 2010\Projects\XDC\bin\Debug\STS.exe
+C:\Users\John\Documents\Visual Studio 2010\Projects\XDC\bin\Debug\STS.pdb
+C:\Users\John\Documents\Visual Studio 2010\Projects\XDC\obj\x86\Debug\VTDev.Tools.STS.FormSTS.resources
+C:\Users\John\Documents\Visual Studio 2010\Projects\XDC\obj\x86\Debug\VTDev.Tools.STS.Properties.Resources.resources
+C:\Users\John\Documents\Visual Studio 2010\Projects\XDC\obj\x86\Debug\STS.csproj.GenerateResource.Cache
+C:\Users\John\Documents\Visual Studio 2010\Projects\XDC\obj\x86\Debug\STS.exe
+C:\Users\John\Documents\Visual Studio 2010\Projects\XDC\obj\x86\Debug\STS.pdb
+C:\Users\John\Documents\Visual Studio 2010\Projects\NIST STS\obj\x86\Debug\STS.exe
+C:\Users\John\Documents\Visual Studio 2010\Projects\NIST STS\obj\x86\Debug\STS.pdb
+C:\Users\John\Documents\Visual Studio 2010\Projects\NIST STS\bin\Debug\STS.exe
+C:\Users\John\Documents\Visual Studio 2010\Projects\NIST STS\bin\Debug\STS.pdb
+C:\Users\John\Documents\Visual Studio 2010\Projects\NIST STS\obj\x86\Debug\VTDev.Tools.STS.FormSTS.resources
+C:\Users\John\Documents\Visual Studio 2010\Projects\NIST STS\obj\x86\Debug\VTDev.Tools.STS.Properties.Resources.resources
+C:\Users\John\Documents\Visual Studio 2010\Projects\NIST STS\obj\x86\Debug\STS.csproj.GenerateResource.Cache

@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "STS", "STS.csproj", "{57DC22A0-AC01-4D2C-93F6-23D257E88338}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5F81BFA2-7E85-4413-8B2F-37BDFD16DFF4} = {5F81BFA2-7E85-4413-8B2F-37BDFD16DFF4}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Statistical Tests Suite", "Nist\Statistical Tests Suite\Statistical Tests Suite.vcxproj", "{5F81BFA2-7E85-4413-8B2F-37BDFD16DFF4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|Win32 = Debug|Win32
+		Debug|x86 = Debug|x86
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|Win32 = Release|Win32
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{57DC22A0-AC01-4D2C-93F6-23D257E88338}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{57DC22A0-AC01-4D2C-93F6-23D257E88338}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{57DC22A0-AC01-4D2C-93F6-23D257E88338}.Debug|Win32.ActiveCfg = Debug|x86
+		{57DC22A0-AC01-4D2C-93F6-23D257E88338}.Debug|x86.ActiveCfg = Debug|x86
+		{57DC22A0-AC01-4D2C-93F6-23D257E88338}.Debug|x86.Build.0 = Debug|x86
+		{57DC22A0-AC01-4D2C-93F6-23D257E88338}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{57DC22A0-AC01-4D2C-93F6-23D257E88338}.Release|Mixed Platforms.Build.0 = Release|x86
+		{57DC22A0-AC01-4D2C-93F6-23D257E88338}.Release|Win32.ActiveCfg = Release|x86
+		{57DC22A0-AC01-4D2C-93F6-23D257E88338}.Release|x86.ActiveCfg = Release|x86
+		{57DC22A0-AC01-4D2C-93F6-23D257E88338}.Release|x86.Build.0 = Release|x86
+		{5F81BFA2-7E85-4413-8B2F-37BDFD16DFF4}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{5F81BFA2-7E85-4413-8B2F-37BDFD16DFF4}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{5F81BFA2-7E85-4413-8B2F-37BDFD16DFF4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5F81BFA2-7E85-4413-8B2F-37BDFD16DFF4}.Debug|Win32.Build.0 = Debug|Win32
+		{5F81BFA2-7E85-4413-8B2F-37BDFD16DFF4}.Debug|x86.ActiveCfg = Debug|Win32
+		{5F81BFA2-7E85-4413-8B2F-37BDFD16DFF4}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{5F81BFA2-7E85-4413-8B2F-37BDFD16DFF4}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{5F81BFA2-7E85-4413-8B2F-37BDFD16DFF4}.Release|Win32.ActiveCfg = Release|Win32
+		{5F81BFA2-7E85-4413-8B2F-37BDFD16DFF4}.Release|Win32.Build.0 = Release|Win32
+		{5F81BFA2-7E85-4413-8B2F-37BDFD16DFF4}.Release|x86.ActiveCfg = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
