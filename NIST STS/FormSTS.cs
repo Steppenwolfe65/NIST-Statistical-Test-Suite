@@ -178,7 +178,7 @@ namespace VTDev.Tools.STS
 
         private void AnalysisToLog()
         {
-            string logPath = Path.Combine(this.InputFile, LOGFILE_NAME);
+            string logPath = Path.Combine(Path.GetDirectoryName(this.InputFile), LOGFILE_NAME);
             const string HEADER = "########################## ANALYSIS RESULTS ##########################";
 
             try

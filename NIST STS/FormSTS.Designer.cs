@@ -55,10 +55,10 @@
             this.btnAnalyze = new System.Windows.Forms.Button();
             this.lblBuildSize = new System.Windows.Forms.Label();
             this.lblStatus = new System.Windows.Forms.Label();
-            this.pbStatus = new System.Windows.Forms.ProgressBar();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.grpOptions = new System.Windows.Forms.GroupBox();
             this.chkLogResults = new System.Windows.Forms.CheckBox();
+            this.pbStatus = new System.Windows.Forms.ProgressBar();
             this.grpOutput.SuspendLayout();
             this.grpTests.SuspendLayout();
             this.grpAlgorithm.SuspendLayout();
@@ -115,7 +115,7 @@
             this.grpTests.Controls.Add(this.BlockFrequency);
             this.grpTests.Location = new System.Drawing.Point(416, 15);
             this.grpTests.Name = "grpTests";
-            this.grpTests.Size = new System.Drawing.Size(213, 364);
+            this.grpTests.Size = new System.Drawing.Size(218, 364);
             this.grpTests.TabIndex = 12;
             this.grpTests.TabStop = false;
             this.grpTests.Text = "Test Groups";
@@ -283,9 +283,9 @@
             this.FFT.CheckState = System.Windows.Forms.CheckState.Checked;
             this.FFT.Location = new System.Drawing.Point(9, 88);
             this.FFT.Name = "FFT";
-            this.FFT.Size = new System.Drawing.Size(198, 17);
+            this.FFT.Size = new System.Drawing.Size(207, 17);
             this.FFT.TabIndex = 72;
-            this.FFT.Text = "Discrete Fourier Transform (Spectral)";
+            this.FFT.Text = "Discrete Fourier Transform (10mb max)";
             this.FFT.UseVisualStyleBackColor = true;
             this.FFT.CheckedChanged += new System.EventHandler(this.OnTestCountChanged);
             // 
@@ -369,7 +369,7 @@
             // lblBuildSize
             // 
             this.lblBuildSize.AutoSize = true;
-            this.lblBuildSize.Location = new System.Drawing.Point(441, 447);
+            this.lblBuildSize.Location = new System.Drawing.Point(441, 455);
             this.lblBuildSize.Name = "lblBuildSize";
             this.lblBuildSize.Size = new System.Drawing.Size(16, 13);
             this.lblBuildSize.TabIndex = 19;
@@ -378,24 +378,17 @@
             // lblStatus
             // 
             this.lblStatus.AutoSize = true;
-            this.lblStatus.Location = new System.Drawing.Point(216, 447);
+            this.lblStatus.Location = new System.Drawing.Point(216, 455);
             this.lblStatus.Name = "lblStatus";
             this.lblStatus.Size = new System.Drawing.Size(52, 13);
             this.lblStatus.TabIndex = 18;
             this.lblStatus.Text = "Waiting...";
             // 
-            // pbStatus
-            // 
-            this.pbStatus.Location = new System.Drawing.Point(3, 445);
-            this.pbStatus.Name = "pbStatus";
-            this.pbStatus.Size = new System.Drawing.Size(206, 16);
-            this.pbStatus.TabIndex = 16;
-            // 
             // statusStrip1
             // 
-            this.statusStrip1.Location = new System.Drawing.Point(0, 442);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 450);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(638, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(641, 22);
             this.statusStrip1.TabIndex = 17;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -404,7 +397,7 @@
             this.grpOptions.Controls.Add(this.chkLogResults);
             this.grpOptions.Location = new System.Drawing.Point(417, 389);
             this.grpOptions.Name = "grpOptions";
-            this.grpOptions.Size = new System.Drawing.Size(212, 44);
+            this.grpOptions.Size = new System.Drawing.Size(218, 44);
             this.grpOptions.TabIndex = 20;
             this.grpOptions.TabStop = false;
             this.grpOptions.Text = "Options";
@@ -419,24 +412,32 @@
             this.chkLogResults.Text = "Save Results to file";
             this.chkLogResults.UseVisualStyleBackColor = true;
             // 
+            // pbStatus
+            // 
+            this.pbStatus.Location = new System.Drawing.Point(7, 454);
+            this.pbStatus.Name = "pbStatus";
+            this.pbStatus.Size = new System.Drawing.Size(206, 16);
+            this.pbStatus.TabIndex = 21;
+            // 
             // FormSTS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(638, 464);
+            this.ClientSize = new System.Drawing.Size(641, 472);
+            this.Controls.Add(this.pbStatus);
             this.Controls.Add(this.grpOptions);
             this.Controls.Add(this.lblBuildSize);
             this.Controls.Add(this.lblStatus);
             this.Controls.Add(this.grpAlgorithm);
-            this.Controls.Add(this.pbStatus);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.grpOutput);
             this.Controls.Add(this.grpTests);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(654, 511);
+            this.MaximumSize = new System.Drawing.Size(660, 511);
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(654, 511);
             this.Name = "FormSTS";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "NIST Statistical Test Suite";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.OnFormClose);
             this.Load += new System.EventHandler(this.OnFormLoad);
@@ -481,10 +482,10 @@
         private System.Windows.Forms.Button btnAnalyze;
         private System.Windows.Forms.Label lblBuildSize;
         private System.Windows.Forms.Label lblStatus;
-        private System.Windows.Forms.ProgressBar pbStatus;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.GroupBox grpOptions;
         private System.Windows.Forms.CheckBox chkLogResults;
+        private System.Windows.Forms.ProgressBar pbStatus;
     }
 }
 

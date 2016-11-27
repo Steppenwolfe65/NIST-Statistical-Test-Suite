@@ -317,16 +317,24 @@ namespace VTDev.Tools.STS
                 }
                 if (ParametersKey[Tests.FFT])
                 {
-                    try
+                    if (fileLength > 1024 * 1000 * 10)
                     {
-                        pValue = NistDiscreteFourierTransform();
+                        testResults.Add("FFT", "0.0" + "," + "TOO LARGE");
+                        OnProgressChanged(1, "FFT Completed..");
                     }
-                    catch 
+                    else
                     {
-                        pValue = -1;
+                        try
+                        {
+                            pValue = NistDiscreteFourierTransform();
+                        }
+                        catch
+                        {
+                            pValue = -1;
+                        }
+                        testResults.Add("FFT", pValue.ToString() + "," + State(ref pValue));
+                        OnProgressChanged(1, "FFT Completed..");
                     }
-                    testResults.Add("FFT", pValue.ToString() + "," + State(ref pValue));
-                    OnProgressChanged(1, "FFT Completed..");
                 }
                 if (ParametersKey[Tests.Frequency])
                 {
@@ -495,7 +503,7 @@ namespace VTDev.Tools.STS
                 return RANGED_RESULT;
             }
 
-            return PValue < ALPHA ? "FAILURE" : "SUCCESS";
+            return PValue < ALPHA ? "FAIL" : "PASS";
         }
         #endregion
 

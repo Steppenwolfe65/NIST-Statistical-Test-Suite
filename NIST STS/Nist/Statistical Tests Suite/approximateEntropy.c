@@ -38,7 +38,7 @@ double ApproximateEntropy(int m, int n)
 			if ( (P = (unsigned int*)calloc(powLen,sizeof(unsigned int)))== NULL ) 
 			{
 				//fprintf(stats[TEST_APEN], "ApEn:  Insufficient memory available.\n");
-				return;
+				return 0;
 			}
 			for ( i=1; i<powLen-1; i++ )
 				P[i] = 0;
